@@ -248,6 +248,7 @@ body {
 /*------------ 404-page css ---------*/
 
 .container {
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     padding: 3em;
     background-color: #fff;

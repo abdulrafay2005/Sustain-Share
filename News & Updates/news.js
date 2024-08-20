@@ -73,10 +73,11 @@ $(document).ready(function () {
       newsData.slice(start, end).forEach(news => {
           $('#news-grid').append(`
               <div class="news-card">
+            <img src="${news.img}">
                   <div class="news-card-content">
                       <h4>${news.title}</h4>
                       <p>${news.date} / ${news.author}</p>
-                      <a href="/404 Page/404-page.html" class="read-more">Read More</a>
+                      <a href="${news.link}" class="read-more">Read More</a>
                   </div>
               </div>
           `);

@@ -24,6 +24,24 @@ window.onscroll = function() {
     }
   };
 
+// MOBILE MENU
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('mobile-menu');
+  const navLinks = document.getElementById('nav-links');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', () => {
+      const dropdownContent = dropdown.querySelector('.dropdown-content');
+      dropdownContent.classList.toggle('active');
+    });
+  });
+});
 
   // CARD FLIP JS
   document.addEventListener('DOMContentLoaded', () => {
